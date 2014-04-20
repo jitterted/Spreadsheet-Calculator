@@ -35,6 +35,23 @@ Unable to share problem description and company's name as its was marked `Confid
 |PrettyPrinter.java| Class for priting a matrix in a pretty format. Source code taken from [here](http://stackoverflow.com/a/11384393/2228512)|
 |SpreadsheetTest.java| A raw Test class just to bundle up running tests against different input files|
 
+## How to Run
+
+Clone the repo and from the parent directory `Spreadsheet-Calculator` run the following commands
+
+- Compile
+
+> Spreadsheet-Calculator$ javac src/main/java/com/rohitsinha/codingchallenge/*.java
+
+- Run
+
+> Spreadsheet-Calculator$ cat input1.txt | java -classpath src/ main.java.com.rohitsinha.codingchallenge.Spreadsheet
+
+- For prettyPrint Results
+
+> Spreadsheet-Calculator$ cat input1.txt | java -classpath src/ main.java.com.rohitsinha.codingchallenge.Spreadsheet -p
+
+
 ## Examples
 ### 1. input1.txt
 
