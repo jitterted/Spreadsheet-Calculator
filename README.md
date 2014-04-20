@@ -4,6 +4,9 @@ Spreadsheet Calculator
 A simple textual spreadsheet calculator based on java.
 Developed for a coding challenge.
 
+## Problem Description
+Unable to share problem description and company's name as its was marked `Confidential` and asked not to distribute.
+
 ## Supported Functionalities
 1. Supports operations on negative and positive Integers and cell based references.
 2. Detects and reports circular dependencies between cells
@@ -31,6 +34,70 @@ Developed for a coding challenge.
 |Utils.java| Class containing some utility functions|
 |PrettyPrinter.java| Class for priting a matrix in a pretty format. Source code taken from [here](http://stackoverflow.com/a/11384393/2228512)|
 |SpreadsheetTest.java| A raw Test class just to bundle up running tests against different input files|
+
+## Examples
+### 1. input1.txt
+
+#### Inputs:
+
+||0| 1| 2|
+| ------------- |-------------|
+| A | A2 | 4 5 * | A1|
+| B  | A1 B2 / 2 + |3 |39 B1 B2 * /| 
+
+#### Results:
+
+20.00000
+
+20.00000
+
+20.00000
+
+8.66667
+
+3.00000
+
+1.50000
+
+#### PrettyPrint Results:
+
+||0| 1| 2|
+| ------------- |-------------|
+| A |20.00000|20.00000|20.00000|
+| B  | 8.66667 |3.00000 |1.50000 | 
+
+### 2. input2.txt
+
+#### Inputs:
+
+||0| 1| 2|
+| ------------- |-------------|
+| A | A2 | 4 5 * A1 / | A1|
+| B  | A1 B2 / 2 + |3 |39 B1 B2 * /| 
+
+#### Results:
+
+Not Evaluated (Circular Dependency)
+
+
+Not Evaluated (Circular Dependency)
+
+Not Evaluated
+
+Not Evaluated (Circular Dependency)
+
+3.00000
+
+Not Evaluated
+
+#### PrettyPrint Results:
+
+||0| 1| 2|
+| ------------- |-------------|
+| A |Not Evaluated (Circular Dependency)|Not Evaluated (Circular Dependency)|Not Evaluated|
+| B  | Not Evaluated (Circular Dependency)|3.00000                            |Not Evaluated|
+
+
 
 ## Testing
 The program has been tested on following operating systems:
