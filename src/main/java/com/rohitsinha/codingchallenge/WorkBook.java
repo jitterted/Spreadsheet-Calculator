@@ -166,7 +166,7 @@ public class WorkBook {
 					if (i == 0 && j == 0) {
 						matrix[i][j] = " ";
 					} else if (i == 0) {
-						matrix[i][j] = String.valueOf(j - 1);
+						matrix[i][j] = String.valueOf(j);
 					} else {
 						matrix[i][j] = Utils.getRowName(i - 1);
 					}
