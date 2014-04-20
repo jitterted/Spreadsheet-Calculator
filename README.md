@@ -40,10 +40,11 @@ Unable to share problem description and company's name as its was marked `Confid
 
 #### Inputs:
 
-||0| 1| 2|
-| ------------- |-------------|
-| A | A2 | 4 5 * | A1|
-| B  | A1 B2 / 2 + |3 |39 B1 B2 * /| 
+| | 1        | 2           | 3  |
+|----| ------------- |---------------| ------|
+|A | A2 | 4 5 * | A1|
+|B  | A1 B2 / 2 + |3 |39 B1 B2 * /| 
+
 
 #### Results:
 
@@ -59,21 +60,22 @@ Unable to share problem description and company's name as its was marked `Confid
 
 1.50000
 
+
 #### PrettyPrint Results:
 
-||0| 1| 2|
-| ------------- |-------------|
-| A |20.00000|20.00000|20.00000|
-| B  | 8.66667 |3.00000 |1.50000 | 
+| | 1        | 2           | 3  |
+|----| ------------- |---------------| ------|
+|A| 20.00000     | 20.00000 | 20.00000 |
+|B| 8.66667      | 3.00000      | 1.50000 |
 
 ### 2. input2.txt
 
 #### Inputs:
 
-||0| 1| 2|
-| ------------- |-------------|
-| A | A2 | 4 5 * A1 / | A1|
-| B  | A1 B2 / 2 + |3 |39 B1 B2 * /| 
+| | 1        | 2           | 3  |
+|----| ------------- |---------------| ------|
+|A | A2 | 4 5 * A1 / | A1|
+|B  | A1 B2 / 2 + |3 |39 B1 B2 * /| 
 
 #### Results:
 
@@ -92,12 +94,10 @@ Not Evaluated
 
 #### PrettyPrint Results:
 
-||0| 1| 2|
-| ------------- |-------------|
-| A |Not Evaluated (Circular Dependency)|Not Evaluated (Circular Dependency)|Not Evaluated|
-| B  | Not Evaluated (Circular Dependency)|3.00000                            |Not Evaluated|
-
-
+| | 1        | 2           | 3  |
+|----| ------------- |---------------| ------|
+|A |Not Evaluated (Circular Dependency)|Not Evaluated (Circular Dependency)|Not Evaluated|
+|B  | Not Evaluated (Circular Dependency)|3.00000 | Not Evaluated|
 
 ## Testing
 The program has been tested on following operating systems:
