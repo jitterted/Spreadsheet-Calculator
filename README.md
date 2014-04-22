@@ -121,6 +121,8 @@ The program has been tested on following operating systems:
 
 1. Mac OSX 10.9.2
 
+##To Do
+1. Add function headers and improve code documentation. This complete project was developed in less than 4 hours so the documentation kind of sucks :/
 
 ##Version
 1.0 beta
