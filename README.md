@@ -45,11 +45,11 @@ Clone the repo and from the parent directory `Spreadsheet-Calculator` run the fo
 
 - Run
 
-> Spreadsheet-Calculator$ cat input1.txt | java -classpath src/ main.java.com.rohitsinha.codingchallenge.Spreadsheet
+> Spreadsheet-Calculator$ cat input1.txt | java -classpath src/ com.rohitsinha.codingchallenge.Spreadsheet
 
 - For prettyPrint Results
 
-> Spreadsheet-Calculator$ cat input1.txt | java -classpath src/ main.java.com.rohitsinha.codingchallenge.Spreadsheet -p
+> Spreadsheet-Calculator$ cat input1.txt | java -classpath src/ com.rohitsinha.codingchallenge.Spreadsheet -p
 
 
 ## Examples

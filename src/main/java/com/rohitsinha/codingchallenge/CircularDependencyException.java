@@ -1,4 +1,4 @@
-package main.java.com.rohitsinha.codingchallenge;
+package com.rohitsinha.codingchallenge;
 
 /**
  * Exception class for circular dependency
@@ -6,10 +6,10 @@ package main.java.com.rohitsinha.codingchallenge;
  * @author Rohit Sinha
  */
 public class CircularDependencyException extends Exception {
-	public CircularDependencyException() {
-	}
+  public CircularDependencyException() {
+  }
 
-	public CircularDependencyException(String message) {
-		super(message);
-	}
+  public CircularDependencyException(String message) {
+    super(message);
+  }
 }

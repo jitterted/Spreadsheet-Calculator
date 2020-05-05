@@ -1,4 +1,4 @@
-package main.java.com.rohitsinha.codingchallenge;
+package com.rohitsinha.codingchallenge;
 
 /**
  * Abstract token class
@@ -7,20 +7,20 @@ package main.java.com.rohitsinha.codingchallenge;
  */
 public abstract class Token {
 
-	private String token = null;
+  private String token = null;
 
-	public String getToken() {
-		return token;
-	}
+  public String getToken() {
+    return token;
+  }
 
-	public void setToken(String token) {
-		this.token = token;
-	}
+  public void setToken(String token) {
+    this.token = token;
+  }
 
-	@Override
-	public String toString() {
-		return "Token{" +
-				"token='" + token + '\'' +
-				'}';
-	}
+  @Override
+  public String toString() {
+    return "Token{" +
+        "token='" + token + '\'' +
+        '}';
+  }
 }

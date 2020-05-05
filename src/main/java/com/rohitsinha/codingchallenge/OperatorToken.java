@@ -1,4 +1,4 @@
-package main.java.com.rohitsinha.codingchallenge;
+package com.rohitsinha.codingchallenge;
 
 /**
  * Class to represent Operators as Tokens
@@ -7,12 +7,12 @@ package main.java.com.rohitsinha.codingchallenge;
  */
 public class OperatorToken extends Token {
 
-	public OperatorToken(Operators operator) {
-		setToken(operator.getOperator());
-	}
+  public OperatorToken(Operators operator) {
+    setToken(operator.getOperator());
+  }
 
-	public Operators getParsedValue() {
-		return Operators.get(getToken());
-	}
+  public Operators getParsedValue() {
+    return Operators.get(getToken());
+  }
 
 }

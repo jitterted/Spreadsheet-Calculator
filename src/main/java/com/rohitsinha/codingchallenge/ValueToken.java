@@ -1,4 +1,4 @@
-package main.java.com.rohitsinha.codingchallenge;
+package com.rohitsinha.codingchallenge;
 
 /**
  * Class to represent Values(operands) as Tokens
@@ -7,13 +7,13 @@ package main.java.com.rohitsinha.codingchallenge;
  */
 public class ValueToken extends Token {
 
-	public static final String valuePatternRegex = "[+-]?\\d+";
+  public static final String valuePatternRegex = "[+-]?\\d+";
 
-	public ValueToken(String str) {
-		setToken(str);
-	}
+  public ValueToken(String str) {
+    setToken(str);
+  }
 
-	public double getParsedValue() {
-		return Double.parseDouble(getToken());
-	}
+  public double getParsedValue() {
+    return Double.parseDouble(getToken());
+  }
 }
